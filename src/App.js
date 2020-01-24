@@ -1,18 +1,15 @@
 import React from 'react';
-//import { render } from 'react-dom';
-//import logo from './logo.svg';
 import './App.css';
-//import './components/suggested_users/styles.css'
-import SuggestedUser from './components/suggested_users/SuggestedUsers'
+import Profile from './components/Profile';
 
-
-class App extends React.Component{
-
-  render(){
-    return(
-      <SuggestedUser/>
-    )
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Profile /> 
+      </header>
+    </div>
+  );
 }
 
 export default App;
