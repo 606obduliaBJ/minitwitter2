@@ -1,8 +1,8 @@
-import React from 'react';
-import {BrowserRouter as Router, Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import perfil from './perfil.jpg';
-//import banner from './banner.jpg';
+import React from 'react'
+import {BrowserRouter as Router, Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
+import perfil from './perfil.jpg'
+import './Profile.css' 
 
 
 
