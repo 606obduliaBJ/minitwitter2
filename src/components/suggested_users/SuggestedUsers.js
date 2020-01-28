@@ -1,6 +1,7 @@
 import React from 'react'
 import perfil from './perfil.jpg'
-//import perfil_01 from 'perfil_01.jpg';
+import perfil_01 from './perfil_01.jpg'
+import './SuggestedUsers.css'
 
 
 class SuggestedUser extends React.Component{
@@ -11,13 +12,32 @@ class SuggestedUser extends React.Component{
         <span className="su-title">A quién seguir</span>
         <div className="sg-item">
           <div className="su-perfil">
-            <img src={perfil} alt="Juan manuel"/>
+            {/*--perfil: es el nombre de la imagen que tiene el usuario -->*/}
+            <img src={perfil} alt="Juan lopez"/>
+          </div>
+          <div className="sg-body">
+            <div>
+              <a href={"/"}>{/*se le asigna la ruta para dicho usuario */}
+                <span className="sg-name">Juan López</span>
+                <span className="sg-username">@juan</span>
+              </a>
+            </div>
+            <a href={"/"}
+              className="btn btn-primary btn-sm">
+              <i className="fa fa-user-plus" aria-hidden="true"></i>
+              Ver perfil</a>
+          </div>
+        </div>
+        <br></br>
+        <div className="sg-item">
+          <div className="su-perfil">
+            <img src={perfil_01} alt="mario lopez"/>
           </div>
           <div className="sg-body">
             <div>
               <a href={"/"}>
-                <span className="sg-name">juan lopez</span>
-                <span className="sg-username">@juan</span>
+                <span className="sg-name">Juan Pérez</span>
+                <span className="sg-username">@juanito.p</span>
               </a>
             </div>
             <a href={"/"}
