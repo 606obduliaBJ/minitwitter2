@@ -7,7 +7,7 @@
     line-height: inherit;
  }
 
-#suggestedUsers, #profile{
+#profile{
     max-width: 350px;
 }
 
@@ -20,7 +20,6 @@
     overflow: hidden;
    }
    
-#profile .profile-banner{}
 
 #profile .profile-banner {
     min-height: 100px;

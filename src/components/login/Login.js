@@ -1,11 +1,13 @@
 import React from 'react'
+import './login.css'
 import update from 'react-addons-update'
 import APIInvoker from '../utils/APIInvoker'
+//import tw from '../twitter/Twitter'
 
-import './login.css'
+
 class Login extends React.Component {
-    constructor() {
-        super(...arguments)
+    constructor(props) {
+        super(props)
         this.state = {
             username: "",
             password: ""
@@ -47,6 +49,8 @@ class Login extends React.Component {
         }) 
     }
 
+  
+
     render() {
         return (
             < div id="signup" >
@@ -70,9 +74,11 @@ class Login extends React.Component {
                             value={this.state.password} placeholder="Contraseña"
                             name="password" onChange={this.handleInput.bind(this)} />
                         < label ref="passwordLabel" htmlFor="passwordLabel" ></label >
+        
+                         <a href={'/'} className="btn btn-primary btn-sm">
+                                <i className="fa fa-user-plus" aria-hidden="true"/>
+                                    Registrar</a> 
 
-                        < button className="btn btn-primary btn-lg " id="submitBtn"
-                            onClick={this.login.bind(this)} > Regístrate</button >
                         < label ref="submitBtnLabel" id="submitBtnLabel" htmlFor="submitBtn"
                             className="shake animated hidden " ></label >
                         < p className="bg-danger user-test" >
@@ -85,4 +91,4 @@ class Login extends React.Component {
         )
     }
 }
-export default Login
+export default Login;

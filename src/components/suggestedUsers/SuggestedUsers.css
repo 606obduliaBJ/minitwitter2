@@ -46,7 +46,8 @@ body{
   }
   
   #suggestedUsers .sg-item .su-avatar{
-    position: relative;
+    position: absolute;
+  /*default relative*/
   }
   
   #suggestedUsers .sg-item .su-avatar img{
