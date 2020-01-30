@@ -1,36 +1,30 @@
-//import React from 'react';
 import './App.css';
 import React, { Component } from 'react';
 import Login from './components/login/Login';
-//import Twitter from './components/twitter/Twitter'
-import Profile from '../src/components/Profile'
-import SuggestedUser from '../src/components/suggestedUsers/SuggestedUsers'
-//import 'bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import Twitter from '../src/components/twitter/Twitter'
+import SuggestedUser from './components/suggestedUsers/SuggestedUsers';
+import Profile from './components/Profile'
 
 
 
 class App extends Component {
  render() {
   return (
-    <div className="App">
-      
-<<<<<<< HEAD
-        <Profile /> 
-      <Login>
-
-      </Login>
-    </div>
-=======
-      <Login/>
-      
-            <Profile /> 
-            
+    <BrowserRouter>
       <div>
-      <SuggestedUser/>
-        </div>     
+      <Login></Login>
+        <Switch>
+          <Route
+            path="/twitter" component={Twitter}/>
+            <Route
+            path="/profile" component={Profile}/>
+            <Route
+            path="/suggestedUser" component={SuggestedUser}/>
+        </Switch>    
+      </div>
+    </BrowserRouter>
     
->>>>>>> mireia2
-    </div>
    );
  }
 }

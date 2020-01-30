@@ -2,6 +2,8 @@ import React from 'react'
 import './login.css'
 import update from 'react-addons-update'
 import APIInvoker from '../utils/APIInvoker'
+import {Link } from 'react-router-dom';
+
 //import tw from '../twitter/Twitter'
 
 
@@ -48,9 +50,6 @@ class Login extends React.Component {
             console.log("Error en la autenticación")           
         }) 
     }
-
-  
-
     render() {
         return (
             < div id="signup" >
@@ -74,10 +73,13 @@ class Login extends React.Component {
                             value={this.state.password} placeholder="Contraseña"
                             name="password" onChange={this.handleInput.bind(this)} />
                         < label ref="passwordLabel" htmlFor="passwordLabel" ></label >
-        
-                         <a href={'/'} className="btn btn-primary btn-sm">
+                        
+                        <Link to="/twitter" className="link">Entrar</Link>
+                        
+
+                        {/*  <a href={'/'} className="btn btn-primary btn-sm">
                                 <i className="fa fa-user-plus" aria-hidden="true"/>
-                                    Registrar</a> 
+                                    Registrar</a> */}
 
                         < label ref="submitBtnLabel" id="submitBtnLabel" htmlFor="submitBtn"
                             className="shake animated hidden " ></label >
