@@ -1,8 +1,11 @@
-import React from 'react';
+//import React from 'react';
 import './App.css';
-import Profile from './components/Profile';
 import React, { Component } from 'react';
 import Login from './components/login/Login';
+//import Twitter from './components/twitter/Twitter'
+import Profile from '../src/components/Profile'
+import SuggestedUser from '../src/components/suggestedUsers/SuggestedUsers'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
@@ -11,11 +14,22 @@ class App extends Component {
   return (
     <div className="App">
       
+<<<<<<< HEAD
         <Profile /> 
       <Login>
 
       </Login>
     </div>
+=======
+      <Login/>
+      
+            <Profile /> 
+            
+      <div>
+      <SuggestedUser/>
+        </div>     
+    
+>>>>>>> mireia2
     </div>
    );
  }

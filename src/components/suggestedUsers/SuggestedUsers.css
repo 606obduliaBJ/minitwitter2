@@ -1,0 +1,165 @@
+body{
+    background-color: #F5F8FA;
+  }
+  
+  
+  img {
+    max-width: 250px;
+  }
+  
+  /** TWEET COMPONENT **/
+ 
+  
+  /** SIGNUP COMPONENT **/
+
+    
+  /** Profile Component **/
+  
+  .twitter-panel{
+    background-color: #fff;
+    background-clip: inherit;
+    border: 1px solid #e6ecf0;
+    border-radius: 5px;
+    line-height: inherit;
+  }
+  
+  #suggestedUsers,
+  #profile{
+    max-width: 350px;
+  }
+ 
+  
+  /** SuggestedUsers Component **/
+  #suggestedUsers{
+    padding: 10px;
+  }
+  
+  
+  #suggestedUsers .su-title{
+    font-size: 18px;
+    color: #66757f;
+    margin: 0px;
+  }
+  
+  #suggestedUsers .sg-item{
+    padding: 5px 0px;
+  }
+  
+  #suggestedUsers .sg-item .su-avatar{
+    position: absolute;
+  /*default relative*/
+  }
+  
+  #suggestedUsers .sg-item .su-avatar img{
+    display: inline-block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    top: 3px;
+  }
+  
+  #suggestedUsers .sg-item .sg-body{
+    position: relative;
+    display: block;
+    margin-left: 55px;
+  
+  }
+  
+  #suggestedUsers .sg-item .sg-body .sg-name{
+    color: #333;
+    font-weight: bold;
+    padding-right: 5px;
+  }
+  
+ 
+  
+  #suggestedUsers .sg-item .sg-body i{
+    color: #fafafa;
+  }
+  
+  
+  /** Reply component **/
+  
+  
+  /** UserPage **/
+  
+  
+  /** MyTweets component **/
+  .tweet-container-header{
+    padding: 10px;
+    font-size: 19px;
+  }
+  
+  
+  /** UserCard component **/
+  .user-card{
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid #E6ECF0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .user-card .user-card-banner{
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    border-bottom: 1px solid ##E6ECF0;
+  }
+  
+  .user-card .user-card-avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+  }
+  
+  
+  .user-card .user-card-body{
+    padding-top: 100px;
+    background-color: #FFF;
+    padding: 10px 10px 20px;
+  
+  }
+  
+  .user-card .user-card-body .user-card-username p{
+    font-size: 12px;
+    color: #66757f;
+  }
+  
+  .user-card .user-card-body .user-card-name{
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  .user-card .user-card-body .user-card-name p {
+    margin: 0px;
+  }
+  
+  .user-card .user-card-body .user-card-description{
+    font-size: 14px;
+    color: #66757f;
+  }
+  
+  
+  .user-card .user-card-body .user-card-username:hover,
+  .user-card .user-card-body .user-card-name:hover{
+    text-decoration: underline;
+  }
+  
+  
+  /** CSSTransactionGroup **/
+  
+   
+  /** TweetReply Component **/
+  
+  html.modal-mode{
+    overflow-y: hidden;
+  }
+  
